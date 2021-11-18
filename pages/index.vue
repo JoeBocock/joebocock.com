@@ -1,10 +1,15 @@
 <template>
-    <div class="bg-white">
-        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-            <div class="text-center">
-            <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">Pricing</h2>
-            <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Take control of your team.</p>
-            <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">Start building for free, then add a site plan to go live. Account plans unlock additional features.</p>
+    <div class="p-4">
+        <dark-mode-toggle></dark-mode-toggle>
+        <div class="max-w-3xl mx-auto flex h-screen">
+            <div class="m-auto text-center flex flex-col">
+                <h2 class="text-6xl font-bold leading-7 text-title dark:text-title-dark -mt-16 mb-10">
+                    Hey There,
+                </h2>
+                <h2 class="text-5xl font-bold leading-7 text-title dark:text-title-dark mb-16">
+                    I'm Joe
+                </h2>
+                <img class="w-96 h-96" src="/desk.svg" alt="flat art desk with computer and potted plant cactus.">
             </div>
         </div>
     </div>

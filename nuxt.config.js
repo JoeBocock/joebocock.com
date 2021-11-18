@@ -13,11 +13,18 @@ export default {
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-        ]
+        ],
+        htmlAttrs: {
+            class: 'dark'
+        },
+        bodyAttrs: {
+            class: 'bg-main dark:bg-main-dark overflow-hidden antialiased'
+        }
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
+        '~/assets/css/app.css',
     ],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
