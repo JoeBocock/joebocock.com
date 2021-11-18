@@ -9,7 +9,7 @@
                 <h2 class="text-5xl font-bold leading-7 text-title dark:text-title-dark mb-16">
                     I'm Joe
                 </h2>
-                <img class="w-96 h-96" src="/desk.svg" alt="flat art desk with computer and potted plant cactus.">
+                <desk-svg class="w-96 h-96" alt="flat art desk with computer and potted plant cactus."></desk-svg>
             </div>
         </div>
     </div>
