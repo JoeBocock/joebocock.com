@@ -374,60 +374,60 @@
 #screen-line-1 {
     opacity: 0;
     width: 0px;
-    animation: screen-line-1 20s linear infinite;
+    animation: screen-line-1 17.5s linear infinite;
 }
 
 @keyframes screen-line-1 {
     0% { opacity: 1; }
-    12.5% { width: 46px; }
+    14.2857142857% { width: 46px; }
     100% { width: 46px; opacity: 1; }
 }
 
 #screen-line-2 {
     opacity: 0;
     width: 0px;
-    animation: screen-line-2 5s 2.5s linear infinite;
+    animation: screen-line-2 15s 2.5s linear infinite;
 }
 
 @keyframes screen-line-2 {
     0% { opacity: 1; }
-    50% { width: 27px; }
+    16.666666666666664% { width: 27px; }
     100% { width: 27px; opacity: 1; }
 }
 
 #screen-line-3 {
     opacity: 0;
     width: 0px;
-    animation: screen-line-3 5s 5s linear infinite;
+    animation: screen-line-3 12.5s 5s linear infinite;
 }
 
 @keyframes screen-line-3 {
     0% { opacity: 1; }
-    50% { width: 13px; }
+    20% { width: 13px; }
     100% { width: 13px; opacity: 1; }
 }
 
 #screen-line-4 {
     opacity: 0;
     width: 0px;
-    animation: screen-line-4 5s 7.5s linear infinite;
+    animation: screen-line-4 10s 7.5s linear infinite;
 }
 
 @keyframes screen-line-4 {
     0% { opacity: 1; }
-    50% { width: 41px; }
+    25% { width: 41px; }
     100% { width: 41px; opacity: 1; }
 }
 
 #screen-line-5 {
     opacity: 0;
     width: 0px;
-    animation: screen-line-5 5s 10s linear infinite;
+    animation: screen-line-5 7.5s 10s linear infinite;
 }
 
 @keyframes screen-line-5 {
     0% { opacity: 1; }
-    50% { width: 3px; }
+    33.33333333333333% { width: 3px; }
     100% { width: 3px; opacity: 1; }
 }
 
@@ -446,12 +446,11 @@
 #screen-line-7 {
     opacity: 0;
     width: 0px;
-    animation: screen-line-6 5s 15s linear infinite;
+    animation: screen-line-6 2.5s 15s linear infinite;
 }
 
 @keyframes screen-line-7 {
     0% { opacity: 1; }
-    50% { width: 13px; }
-    100% { width: 13px; opacity: 1; }
+    100% { width: 13px; }
 }
 </style>
