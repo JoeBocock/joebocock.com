@@ -1,16 +1,10 @@
 <template>
-    <div class="p-4">
-        <dark-mode-toggle></dark-mode-toggle>
-        <div class="max-w-3xl mx-auto flex h-screen">
-            <div class="m-auto text-center flex flex-col">
-                <h2 class="text-6xl font-bold leading-7 text-title dark:text-title-dark -mt-16 mb-10">
-                    Hey There,
-                </h2>
-                <h2 class="text-5xl font-bold leading-7 text-title dark:text-title-dark mb-16">
-                    I'm Joe
-                </h2>
-                <desk-svg class="w-96 h-96" alt="flat art desk with computer and potted plant cactus."></desk-svg>
-            </div>
+    <div>
+        <dark-mode-toggle class="absolute right-2 top-2"></dark-mode-toggle>
+        <div class="flex flex-col w-screen h-screen justify-center items-center">
+            <h2 class="text-5xl md:text-6xl font-bold text-title dark:text-title-dark mb-3">Hey there,</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-title dark:text-title-dark">I'm Joe</h2>
+            <desk-svg class="md:mt-5" aria-label="Flat art desk with iMac, coffee mug and potted plant cactus."></desk-svg>
         </div>
     </div>
 </template>
