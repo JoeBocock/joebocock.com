@@ -1,0 +1,60 @@
+/**
+* Light Mode Variables
+*/
+$background-light: #d4d8f0;
+$text-light: #232946;
+$card-background-light: #fffffe;
+$stroke-light: #121629;
+$main-light: #b8c1ec;
+$secondary-light: #fffffe;
+$highlight-light: #eebbc3;
+
+/**
+* Dark Mode Variables
+*/
+$background-dark: #232946;
+$text-dark: #fffffe;
+$card-background-dark: #eebbc3;
+$stroke-dark: #121629;
+$main-dark: #b8c1ec;
+$secondary-dark: #fffffe;
+$highdark-dark: #eebbc3;
+
+/**
+* Theme Handling
+*/
+$themes: (
+    default: (
+        background: $background-light,
+        text: $text-light,
+        stroke: $stroke-light,
+    ),
+    dark: (
+        background: $background-dark,
+        text: $text-dark,
+        stroke: $stroke-dark,
+    ),
+);
+
+@mixin themed() {
+    @each $theme, $map in $themes {
+        .theme--#{$theme} & {
+            $theme-map: () !global;
+            @each $key, $submap in $map {
+                $value: map-get(map-get($themes, $theme), '#{$key}');
+                $theme-map: map-merge(
+                    $theme-map,
+                    (
+                        $key: $value,
+                    )
+                ) !global;
+            }
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+
+@function t($key) {
+    @return map-get($theme-map, $key);
+}
