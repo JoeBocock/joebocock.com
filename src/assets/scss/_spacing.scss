@@ -6,6 +6,13 @@
     height: 100%;
 }
 
+.width-content {
+    width: 27rem;
+    @media (min-width: $large) {
+        width: 32rem;
+    }
+}
+
 /** Height & Width End */
 
 /** Margin Start */
