@@ -6,7 +6,7 @@
     }
 }
 
-.navigation-button:after {
+.navigation-button::after {
     content: '';
     position: absolute;
     z-index: -1;
@@ -20,13 +20,33 @@
     }
 }
 
-.navigation-button:hover {
+@media (hover: hover) {
+    .navigation-button:hover {
+        @include themed() {
+            color: t('text-inverted');
+        }
+    }
+}
+
+.selected {
     @include themed() {
         color: t('text-inverted');
     }
 }
 
-.navigation-button:hover:after {
-    top: 0%;
-    right: 0em;
+@media (hover: hover) {
+    .navigation-button:hover::after {
+        top: 0%;
+    }
+}
+
+.selected.navigation-button::after {
+        top: 0%;
+}
+
+a {
+    text-decoration: underline;
+    @include themed() {
+        color: t('link');
+    }
 }
