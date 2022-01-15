@@ -1,5 +1,5 @@
 <template>
-    <button @click="toggle()">
+    <button :aria-label="on ? 'Toggle to light mode' : 'Toggle to dark mode'" @click="toggle()">
          <light-mode-icon v-if="on"></light-mode-icon>
 
          <dark-mode-icon v-else></dark-mode-icon>

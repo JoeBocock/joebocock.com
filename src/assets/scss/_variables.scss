@@ -18,7 +18,7 @@ $card-background-dark: #eebbc3;
 $stroke-dark: #121629;
 $main-dark: #b8c1ec;
 $secondary-dark: #fffffe;
-$highdark-dark: #eebbc3;
+$highlight-dark: #eebbc3;
 
 /**
 * Theme Handling
@@ -26,12 +26,16 @@ $highdark-dark: #eebbc3;
 $themes: (
     default: (
         background: $background-light,
+        secondary-background: $background-dark,
         text: $text-light,
+        text-inverted: $text-dark,
         stroke: $stroke-light,
     ),
     dark: (
         background: $background-dark,
+        secondary-background: $highlight-dark,
         text: $text-dark,
+        text-inverted: $text-light,
         stroke: $stroke-dark,
     ),
 );

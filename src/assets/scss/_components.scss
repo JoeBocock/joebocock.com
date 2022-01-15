@@ -1,0 +1,32 @@
+.navigation-button {
+    position: relative;
+    text-decoration: none;
+    @include themed() {
+        color: t('text');
+    }
+}
+
+.navigation-button:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 85%;
+    left: 0em;
+    right: 0;
+    bottom: 0;
+    transition: all 150ms;
+    @include themed() {
+        background-color: t('secondary-background');
+    }
+}
+
+.navigation-button:hover {
+    @include themed() {
+        color: t('text-inverted');
+    }
+}
+
+.navigation-button:hover:after {
+    top: 0%;
+    right: 0em;
+}
