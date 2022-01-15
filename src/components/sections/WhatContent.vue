@@ -1,16 +1,10 @@
 <template>
-        <h2 class="title-large">Hey There,</h2>
-        <span class="title-medium">I'm Joe</span>
-        <desk-vector-graphic />
+    <h2 class="title-large margin-bottom-small">what</h2>
 </template>
 
 <script>
-import DeskVectorGraphic from '../svgs/DeskVectorGraphic.vue'
-
 export default {
     name: 'WhatContent',
-    components: {
-        DeskVectorGraphic,
-    },
+    components: {},
 }
 </script>
