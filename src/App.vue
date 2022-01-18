@@ -2,9 +2,9 @@
     <theme-toggle class="absolute right-none top-none margin-medium padding-small"/>
     <div class="fill-space flex flex-column flex-center">
         <home-content v-if="page === 'home'"></home-content>
-        <who-content v-if="page === 'who'"></who-content>
-        <what-content v-if="page === 'what'"></what-content>
-        <work-content v-if="page === 'work'"></work-content>
+        <who-content v-else-if="page === 'who'"></who-content>
+        <what-content v-else-if="page === 'what'"></what-content>
+        <work-content v-else-if="page === 'work'"></work-content>
         <theme-footer :page="page" @change-page="updatePage"></theme-footer>
     </div>
 </template>

@@ -33,6 +33,5 @@
 <script>
 export default {
     name: 'WhoContent',
-    components: {},
 }
 </script>
