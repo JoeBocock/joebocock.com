@@ -3,7 +3,6 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
 
     font-family: "Montserrat Alternates", sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -37,4 +36,8 @@ button {
     @include themed() {
         outline-color: t('stroke');
     }
+}
+
+.opacity-50 {
+    opacity: 0.5;
 }

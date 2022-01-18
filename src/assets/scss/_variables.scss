@@ -1,6 +1,7 @@
 /**
 * Screen Sizes
 */
+$extra-small: 375px;
 $small: 640px;
 $medium: 768px;
 $large: 1024px;
@@ -30,6 +31,11 @@ $secondary-dark: #fffffe;
 $highlight-dark: #eebbc3;
 
 /**
+* Colours
+*/
+$grey: rgba(128, 128, 128, 0.4);
+
+/**
 * Theme Handling
 */
 $themes: (
@@ -40,6 +46,7 @@ $themes: (
         link: $text-light,
         text-inverted: $text-dark,
         stroke: $stroke-light,
+        accent: $stroke-light,
     ),
     dark: (
         background: $background-dark,
@@ -48,6 +55,7 @@ $themes: (
         link: $highlight-light,
         text-inverted: $text-light,
         stroke: $stroke-dark,
+        accent: $highlight-dark,
     ),
 );
 

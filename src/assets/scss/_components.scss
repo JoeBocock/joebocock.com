@@ -50,3 +50,19 @@ a {
         color: t('link');
     }
 }
+
+.stat-bar > div {
+    background-color: $grey;
+}
+
+.internal-bar {
+    height: 4px;
+    width: 0%;
+    @include themed() {
+        background-color: t('accent');
+    }
+}
+
+span > small {
+    font-size: 0.8rem;
+}
