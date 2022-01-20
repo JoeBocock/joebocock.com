@@ -19,6 +19,13 @@ export default {
     data() {
         return { on: true }
     },
+    mounted() {
+        this.$nextTick(() => {
+            if (!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                this.toggle()
+            }
+        })
+    },
     methods: {
         toggle() {
             this.on = !this.on

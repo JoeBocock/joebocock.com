@@ -1,6 +1,6 @@
 set -e
 
-npm run build
+yarn build
 
 cp HOSTREADME.md dist/README.md
 
