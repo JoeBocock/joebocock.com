@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+}
+
+.test {
+    background-color: white;
+    position: relative;
+}
+
+.test::after {
+    content: '';
+    border: 4px solid;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 100%;
+    height: 100%;
+}
+
+#smoke-small {
+    stroke-dasharray: 0, 26;
+    animation: smoke-small 5s ease infinite;
+}
+
+#smoke-large {
+    stroke-dasharray: 0, 35;
+    animation: smoke-large 5s 0.5s ease infinite;
+}
+
+@keyframes smoke-small {
+    0% {
+        stroke-dasharray: 0, 26;
+    }
+    50% {
+        stroke-dasharray: 26, 0;
+    }
+    100% {
+        stroke-dasharray: 26, 0;
+        opacity: 0;
+    }
+}
+
+@keyframes smoke-large {
+    0% {
+        stroke-dasharray: 0, 35;
+    }
+    50% {
+        stroke-dasharray: 35, 0;
+    }
+    100% {
+        stroke-dasharray: 35, 0;
+        opacity: 0;
+    }
+}
+
+#screen-line-1 {
+    opacity: 0;
+    width: 0px;
+    animation: screen-line-animation-1 2s linear forwards;
+}
+
+@keyframes screen-line-animation-1 {
+    0% {
+        width: 0px;
+        opacity: 1;
+    }
+    100% {
+        width: 138px;
+        opacity: 1;
+    }
+}
+
+#screen-line-2 {
+    opacity: 0;
+    width: 0px;
+    animation: screen-line-animation-2 1.2s 2s linear forwards;
+}
+
+@keyframes screen-line-animation-2 {
+    0% {
+        width: 0px;
+        opacity: 1;
+    }
+    100% {
+        width: 81px;
+        opacity: 1;
+    }
+}
+
+#screen-line-3 {
+    opacity: 0;
+    width: 0px;
+    animation: screen-line-animation-3 0.7s 3.2s linear forwards;
+}
+
+@keyframes screen-line-animation-3 {
+    0% {
+        width: 0px;
+        opacity: 1;
+    }
+    100% {
+        width: 39px;
+        opacity: 1;
+    }
+}
+
+#screen-line-4 {
+    opacity: 0;
+    width: 0px;
+    animation: screen-line-animation-4 1.8s 3.9s linear forwards;
+}
+
+@keyframes screen-line-animation-4 {
+    0% {
+        width: 0px;
+        opacity: 1;
+    }
+    100% {
+        width: 123px;
+        opacity: 1;
+    }
+}
+
+#screen-line-5 {
+    opacity: 0;
+    width: 0px;
+    animation: screen-line-animation-5 0.3s 5.7s linear forwards;
+}
+
+@keyframes screen-line-animation-5 {
+    0% {
+        width: 0px;
+        opacity: 1;
+    }
+    100% {
+        width: 9px;
+        opacity: 1;
+    }
+}
+
+#screen-line-6 {
+    opacity: 0;
+    width: 0px;
+    animation: screen-line-animation-6 0.9s 6s linear forwards;
+}
+
+@keyframes screen-line-animation-6 {
+    0% {
+        width: 0px;
+        opacity: 1;
+    }
+    100% {
+        width: 48px;
+        opacity: 1;
+    }
+}
+
+#screen-line-7 {
+    opacity: 0;
+    width: 0px;
+    animation: screen-line-animation-6 0.9s 6.9s linear forwards;
+}
+
+@keyframes screen-line-animation-7 {
+    0% {
+        width: 0px;
+        opacity: 1;
+    }
+    100% {
+        width: 39px;
+        opacity: 1;
+    }
+}

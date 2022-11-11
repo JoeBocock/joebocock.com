@@ -3,63 +3,25 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build",
-        "lint": "vue-cli-service lint"
+        "dev": "next dev",
+        "build": "next build && next export",
+        "start": "next start",
+        "lint": "next lint"
     },
     "dependencies": {
-        "core-js": "^3.6.5",
-        "register-service-worker": "^1.7.1",
-        "vue": "^3.0.0"
+        "next": "13.0.0",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
     },
     "devDependencies": {
-        "@vue/cli-plugin-babel": "~4.5.0",
-        "@vue/cli-plugin-eslint": "~4.5.0",
-        "@vue/cli-plugin-pwa": "~4.5.0",
-        "@vue/cli-service": "~4.5.0",
-        "@vue/compiler-sfc": "^3.0.0",
-        "@vue/eslint-config-airbnb": "^5.0.2",
-        "babel-eslint": "^10.1.0",
-        "eslint": "^6.7.2",
-        "eslint-plugin-import": "^2.20.2",
-        "eslint-plugin-vue": "^7.0.0",
-        "sass": "^1.26.5",
-        "sass-loader": "^8.0.2"
-    },
-    "eslintConfig": {
-        "root": true,
-        "env": {
-            "node": true
-        },
-        "extends": [
-            "plugin:vue/vue3-essential",
-            "@vue/airbnb"
-        ],
-        "parserOptions": {
-            "parser": "babel-eslint"
-        },
-        "rules": {
-            "indent": [
-                "error",
-                4
-            ],
-            "semi": [
-                "error",
-                "never"
-            ],
-            "max-len": "off",
-            "eol-last": [
-                "error",
-                "always"
-            ],
-            "no-shadow": "off",
-            "no-param-reassign": "off",
-            "vue/no-multiple-template-root": "off"
-        }
-    },
-    "browserslist": [
-        "> 1%",
-        "last 2 versions",
-        "not dead"
-    ]
+        "@types/node": "18.11.8",
+        "@types/react": "18.0.24",
+        "@types/react-dom": "18.0.8",
+        "autoprefixer": "^10.4.13",
+        "eslint": "8.26.0",
+        "eslint-config-next": "13.0.0",
+        "postcss": "^8.4.18",
+        "tailwindcss": "^3.2.1",
+        "typescript": "4.8.4"
+    }
 }
