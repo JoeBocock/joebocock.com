@@ -7,7 +7,7 @@ date: '2022-05-23'
 tags: ['php', 'code', 'laravel']
 ---
 
-import Code from 'astro/components/Code.astro';
+import Code from 'astro/components/Code.astro'
 
 So I'm a bit late to the party on this one, but in fairness, this website didn't exist when Laravel 9 was released. Regardless of the fact I'm three months late, there's still some interesting changes that we can take a quick look through!
 
@@ -47,6 +47,7 @@ There's many ways to group routes in Laravel and most provide inherent functiona
     Route::controller(TagController::class)->group(function () {
         Route::get('/tags', 'index'); Route::get('/tags/{id}', 'show');
     });
+
 `} lang="php" />
 
 <br />
@@ -59,9 +60,13 @@ Laravel Breeze is a basic full stack authentication implementation for new appli
 
 <br />
 
-<Code theme="nord" code={`
+<Code
+    theme="nord"
+    code={`
     $ php artisan breeze:install api
-`} lang="shell" />
+`}
+    lang="shell"
+/>
 
 <br />
 
@@ -73,7 +78,7 @@ So the next time you decide to reach for Next, Nuxt or any other JavaScript appl
 
 <br />
 
-Two new helpers have been added, making existing functionality easier to work with. The first of which makes building the already existing String class cleaner, acting as <span class="bg-[#D8DEE9] inline-block px-1 text-orange-500">Str::of</span>. The second new helper provides a simple way of creating a redirect response, based on the route name.
+Two new helpers have been added, making existing functionality easier to work with. The first of which makes building the already existing String class cleaner, acting as <span class="bg-snow-3 inline-block px-1 text-orange-500">Str::of</span>. The second new helper provides a simple way of creating a redirect response, based on the route name.
 
 <br />
 
@@ -83,6 +88,7 @@ Two new helpers have been added, making existing functionality easier to work wi
     // my-tag-slug
 
     return to_route('tags.show', ['tag' => $slug]);
+
 `} lang="php" />
 
 <br />
