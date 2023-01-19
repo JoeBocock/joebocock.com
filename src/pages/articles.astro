@@ -12,27 +12,29 @@ const posts = (await Astro.glob('./articles/*.{md,mdx}')).sort(
 ---
 
 <Layout title="Joe Bocock | Articles">
-    <main class="mt-12 p-8">
-        <h1 class="font-bold text-6xl">Articles</h1>
-        <p>Come read some of my awful writing.</p>
+    <div class="container mx-auto max-w-4xl">
+        <main class="mt-12 p-8">
+            <h1 class="font-bold text-6xl">Articles</h1>
+            <p>Come read some of my awful writing.</p>
 
-        <ArticleBackButton />
+            <ArticleBackButton />
 
-        <div class="mt-8">
-            {
-                posts.map((post, index) => (
-                    <ArticleCard
-                        slug={post.frontmatter.slug}
-                        title={post.frontmatter.title}
-                        description={post.frontmatter.description}
-                        date={post.frontmatter.date}
-                    />
-                ))
-            }
-        </div>
+            <div class="mt-8">
+                {
+                    posts.map((post, index) => (
+                        <ArticleCard
+                            slug={post.frontmatter.slug}
+                            title={post.frontmatter.title}
+                            description={post.frontmatter.description}
+                            date={post.frontmatter.date}
+                        />
+                    ))
+                }
+            </div>
 
-        <Footer />
-    </main>
+            <Footer />
+        </main>
+    </div>
 </Layout>
 
 <style></style>

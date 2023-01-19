@@ -16,40 +16,42 @@ const { title, date, tags } = frontmatter
 ---
 
 <Layout title={'Joe Bocock | ' + title}>
-    <main class="mt-12 p-8">
-        <h1 class="font-bold text-3xl md:text-5xl">{title}</h1>
-        <div class="mt-2 flex flex-col md:flex-row">
-            <span class="my-auto text-sm text-gray-500"
-                >{
-                    new Date(date).toLocaleDateString(undefined, {
-                        weekday: 'long',
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                    })
-                }</span
-            >
-            <span class="my-auto text-gray-400 hidden md:block mx-1">•</span>
-            <div class="my-auto flex space-x-1">
-                {
-                    tags.map(tag => (
-                        <span class="text-sm text-gray-500">#{tag}</span>
-                    ))
-                }
+    <div class="container mx-auto max-w-4xl">
+        <main class="mt-12 p-8">
+            <h1 class="font-bold text-3xl md:text-5xl">{title}</h1>
+            <div class="mt-2 flex flex-col md:flex-row">
+                <span class="my-auto text-sm text-gray-500"
+                    >{
+                        new Date(date).toLocaleDateString(undefined, {
+                            weekday: 'long',
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric',
+                        })
+                    }</span
+                >
+                <span class="my-auto text-gray-400 hidden md:block mx-1">•</span>
+                <div class="my-auto flex space-x-1">
+                    {
+                        tags.map(tag => (
+                            <span class="text-sm text-gray-500">#{tag}</span>
+                        ))
+                    }
+                </div>
             </div>
-        </div>
 
-        <button onclick="history.back()" class="flex space-x-2 mt-2">
-            <ArrowLeft />
-            <span class="my-auto">back</span>
-        </button>
+            <button onclick="history.back()" class="flex space-x-2 mt-2">
+                <ArrowLeft />
+                <span class="my-auto">back</span>
+            </button>
 
-        <div class="mt-4 mb-16 text-lg">
-            <slot />
-        </div>
+            <div class="mt-4 mb-16 text-lg">
+                <slot />
+            </div>
 
-        <Footer />
-    </main>
+            <Footer />
+        </main>
+    </div>
 </Layout>
 
 <style is:global>
